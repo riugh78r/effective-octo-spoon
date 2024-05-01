@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: lscpu
+      run: docker --version && curl ifconfig.me && lscpu
